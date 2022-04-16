@@ -1,3 +1,5 @@
+
+
 body{
     background-color: #10100f;
 }
@@ -7,12 +9,39 @@ body{
 */
 
 .logo {
-    padding-top: 100px;
+    padding-top: 60px;
     padding-left: 100px;
+}
+
+
+.textarea {
+    background-color: #10100f;
+    color: whitesmoke;
+    padding: 1em;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    outline: none;
+    font-weight: 10;
+    font-size: 36px;
+    width: 720px;
+    height: 640px;
+    margin-bottom: 1px;
+    margin-left: 280px;
+    transition: all 0.2s;
+    resize: none;
+}
+
+
+.botoes {
+    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 320px;
+   
 }
 
 /* botão de criptografia*/
 .btn-cr {    
+    font-family: 'mega';   
     width: 328px;
     height: 67px;
     border: none;
@@ -31,9 +60,10 @@ body{
 
 /* botão de descriptografia */
 
-.btn-de {
+.btn-de { 
     width: 328px;
     height: 67px;
+    margin-left: 24px;
     border: none;
     color: whitesmoke;
     background-color: #10100f;
