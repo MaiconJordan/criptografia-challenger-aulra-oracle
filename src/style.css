@@ -53,7 +53,21 @@ body{
 
 /*#3c3985
  #4078a8
+
+ "https://www.flaticon.com/free-icons/security" title="security icons">Security icons created by Freepik - Flaticon
 */
+
+
+
+@font-face {
+    font-family: 'press';
+    src: url(/src/font/PressStart2P-Regular.ttf);
+}
+
+.resultadoTela {
+    display: none;
+}
+
 
 .logo {
     padding-top: 60px;
@@ -64,7 +78,7 @@ body{
    display: flex;
   
 }
-.textarea {
+.textoarea {
     
     background-color: #10100f;
     color: whitesmoke;
@@ -91,21 +105,26 @@ body{
     width: 480px;
     height: 900px;   
     margin-left: 1200px; 
-    position: absolute;
+    position: absolute ;
     border-radius: 12px;
+    
 
 }
 
 .img-notexto {    
    margin-top: 240px;
-   margin-left: 64px;
+   margin-left: 116px;
 }
 
-h2 {
+div h2 {
     color: aliceblue;
     margin-top: 30px;
     text-align: center;
+    font-family: 'press', cursive;
     font-size: 24px;
+    
+    
+
 }
 
 .resultado p {
@@ -160,7 +179,7 @@ h2 {
 
 .btn-de:hover {
   
-    border: 3px solid#3c3985;
+    border: 3px solid #3c3985;
     box-shadow: inset 328px 0 0 0 #3c3985 ;
 
 }
