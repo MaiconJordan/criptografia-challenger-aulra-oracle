@@ -11,10 +11,7 @@ body{
 
 
 
-@font-face {
-    font-family: 'press';
-    src: url(/font/PressStart2P-Regular.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 .resultadoTela {
     display: none;
@@ -71,11 +68,12 @@ body{
     margin: 30px;
     text-align: center;
     font-size: 36px;
-    color: antiquewhite;
+    color: whitesmoke;
     background-color: #070707;
     border: none;
     resize: none;
     outline: none;
+    font-family: 'Press Start 2P', cursive;
     
 
 }
@@ -89,7 +87,7 @@ div h2 {
     color: aliceblue;
     margin-top: 30px;
     text-align: center;
-    font-family: 'press', cursive;
+    font-family: 'Press Start 2P', cursive;
     font-size: 24px;
     padding: 20px;
    
@@ -152,7 +150,7 @@ div h2 {
     transition: ease-out 0.3s;
     font-size: 1rem;
     outline: none;
-    font-family: 'press', cursive;
+    font-family: 'Press Start 2P', cursive;
 }
 
 .btn-cr:hover {
@@ -174,7 +172,7 @@ div h2 {
     outline: none;
     border: 3px solid #4078a8;
     z-index: 1;
-    font-family: 'press', cursive;
+    font-family: 'Press Start 2P', cursive;
 }
 
 .btn-de:hover {
@@ -203,7 +201,7 @@ div h2 {
 .rodape a {
     text-decoration: none;
     color: #4078a8;
-    font-family:'press', Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Press Start 2P', cursive;
     font-size: 10px;
 }
 
