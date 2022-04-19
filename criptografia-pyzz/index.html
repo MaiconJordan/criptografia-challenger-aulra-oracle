@@ -5,31 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/criptografia-pyzz/css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
 </head>
 <body>
 
-    <img class="logo" src="./img/logo-pyzz.png" alt="logo">
-
+    <header>
+        <img class="logo" src="./img/logo-pyzz.png" alt="logo">
+    </header>
     <div class="texto-input">
         <textarea class="textoarea" placeholder="DIGITE SEU TEXTO" cols="50" rows="50"></textarea>
         <div class="resultado">
             <img class="img-notexto" src="./img/encrypted.png" alt="">            
             <h2 class="nenhuma">Nenhuma mensagem encontrada </h2>
             <textarea name="" id="result" readonly></textarea>            
-            <p id="resultadocripto"></p>  
+           
             <div>
                 <button id="copy" onclick="copy()" >COPIAR</button> 
-            </div>
-            
+            </div>           
               
         </div>       
     </div>    
-    <div class="botoes">
+    <P class="info"><img src="./img/inf.svg" alt=""> apenas letras minúsculas sem acento</P>
+    <div class="botoes">        
         <button class="btn-cr">Criptografar </button>
         <button class="btn-de">Descriptografar</button>
     </div>
     
+    <footer>
+        <div class="rodape">
+            Site desenvolvido por <a href="https://linkedin.com/in/maiconj" target="_blank">Maicon Jordan</a> 
+        </div>
+    </footer>
     
 
    
