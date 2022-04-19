@@ -107,6 +107,7 @@ body{
     margin-left: 1200px; 
     position: absolute ;
     border-radius: 12px;
+    word-break: break-word;
     
 
 }
@@ -122,23 +123,48 @@ div h2 {
     text-align: center;
     font-family: 'press', cursive;
     font-size: 24px;
-    
-    
-
+    padding: 20px;
+   
 }
+
+
 
 .resultado p {
     color: aliceblue;
     text-align: center;
     margin-top: 10px;
+
+}
+
+#copy {
+    display: none;
+    margin-top: 40px;
+    margin-left: 75px ;
+    width: 328px;
+    height: 67px;
+    border: none;
+    color: whitesmoke;
+    background-color: #4078a8;
+    border-radius: 25px;
+    box-shadow: inset 0 0 0 0 #3c3985;
+    
+}
+
+#result {
+    display:none ;
+}
+
+.btn-copiar:hover {
+    box-shadow: inset 328px 0 0 0 #3c3985 ;
+    cursor: pointer;
 }
 
 .botoes {
     padding-bottom: 20px;
     margin-top: 20px;
     margin-left: 320px;
-    display: flex;
-   
+    display: flex;   
+    position: relative;
 }
 
 /* botão de criptografia*/
@@ -154,6 +180,7 @@ div h2 {
     transition: ease-out 0.3s;
     font-size: 1rem;
     outline: none;
+    font-family: 'press', cursive;
 }
 
 .btn-cr:hover {
@@ -175,6 +202,7 @@ div h2 {
     outline: none;
     border: 3px solid #4078a8;
     z-index: 1;
+    font-family: 'press', cursive;
 }
 
 .btn-de:hover {

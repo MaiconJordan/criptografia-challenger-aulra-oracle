@@ -1,16 +1,19 @@
 
 var texto = document.querySelector(".textoarea")
 var resultadoTela = document.querySelector('#resultadocripto')
-var nenhuma = document.querySelector('.nenhuma')
+var nenhuma = document.querySelector('#result')
 var botaocr = document.querySelector(".btn-cr")
 var botaode = document.querySelector(".btn-de")
+
 
 
 
 function criptografar() {    
     
     document.querySelector(".img-notexto").style.display = "none"
-    document.querySelector(".digite").style.display = "none"
+    document.querySelector("#result").style.display = "block"
+    document.getElementById('copy').style.display = "block"
+    document.querySelector('.nenhuma').style.display = "none"
 
     var txto = texto.value
     var txt =  txto.replace(/e/igm, 'enter');
@@ -19,13 +22,16 @@ function criptografar() {
     var txt = txt.replace(/o/igm, 'ober');
     var txt = txt.replace(/u/igm, 'ufat')
 
-    nenhuma.textContent = txt      
+    nenhuma.textContent = txt       
+    
 }
 
 function descriptografar(){
 
     document.querySelector(".img-notexto").style.display = "none"
-    document.querySelector(".digite").style.display = "none"
+    document.querySelector("#result").style.display = "block"
+    document.getElementById('copy').style.display = "block"
+    document.querySelector('.nenhuma').style.display = "none"
 
     var txto = texto.value
     var txt =  txto.replace(/enter/igm, 'e');
@@ -34,11 +40,19 @@ function descriptografar(){
     var txt = txt.replace(/ober/igm, 'o');
     var txt = txt.replace(/ufat/igm, 'u')
 
-    nenhuma.textContent = txt  
+    nenhuma.textContent = txt       
 }
 
+
+function copy() {    
+    document.getElementById('result').select();
+    document.execCommand('copy');
+    alert('Copiado!');
+}
 
 
 
   botaocr.onclick = criptografar;
   botaode.onclick = descriptografar;
+  
+ 

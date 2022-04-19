@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/src/css/style.css">
 </head>
 <body>
 
@@ -15,9 +15,13 @@
         <textarea class="textoarea" placeholder="DIGITE SEU TEXTO" cols="50" rows="50"></textarea>
         <div class="resultado">
             <img class="img-notexto" src="./img/encrypted.png" alt="">            
-            <h2 class="nenhuma">Nenhuma mensagem encontrada aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa kkkkkkkkkkkkkkkkkkkkk</h2>
-            <p class="digite"></p>
-            <p id="resultadocripto"></p>   
+            <h2 class="nenhuma">Nenhuma mensagem encontrada </h2>
+            <textarea name="" id="result" readonly></textarea>            
+            <p id="resultadocripto"></p>  
+            <div>
+                <button id="copy" onclick="copy()" >COPIAR</button> 
+            </div>
+            
               
         </div>       
     </div>    
