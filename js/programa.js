@@ -9,20 +9,27 @@ var botaode = document.querySelector(".btn-de")
 
 
 function criptografar() {    
+
+    if(texto.value < 1 ) {
+        alert("Digite uma mensagem")
+
+    } else {
+  
+        document.querySelector(".img-notexto").style.display = "none"
+        document.querySelector("#result").style.display = "block"
+        document.getElementById('copy').style.display = "block"
+        document.querySelector('.nenhuma').style.display = "none"
     
-    document.querySelector(".img-notexto").style.display = "none"
-    document.querySelector("#result").style.display = "block"
-    document.getElementById('copy').style.display = "block"
-    document.querySelector('.nenhuma').style.display = "none"
-
-    var txto = texto.value
-    var txt =  txto.replace(/e/igm, 'enter');
-    var txt = txt.replace(/i/igm, 'imes');
-    var txt = txt.replace(/a/igm, 'ai');
-    var txt = txt.replace(/o/igm, 'ober');
-    var txt = txt.replace(/u/igm, 'ufat')
-
-    nenhuma.textContent = txt       
+        var txto = texto.value
+        var txt =  txto.replace(/e/igm, 'enter');
+        var txt = txt.replace(/i/igm, 'imes');
+        var txt = txt.replace(/a/igm, 'ai');
+        var txt = txt.replace(/o/igm, 'ober');
+        var txt = txt.replace(/u/igm, 'ufat')
+    
+        nenhuma.textContent = txt   
+    }
+      
     
 }
 
@@ -48,6 +55,7 @@ function copy() {
     document.getElementById('result').select();
     document.execCommand('copy');
     alert('Copiado!');
+
 }
 
 
